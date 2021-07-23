@@ -1,5 +1,5 @@
 {
-  "name": "axios-authorization",
+  "name": "@socheatsok78/axios-authorization",
   "version": "0.1.0",
   "main": "dist/index.js",
   "typings": "types/index.d.ts",
