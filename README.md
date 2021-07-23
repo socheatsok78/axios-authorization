@@ -14,15 +14,51 @@ yarn add @socheatsok78/axios-authorization
 
 ```js
 import axios from 'axios'
-import { useAuthorization, TokenType } from '@socheatsok78/axios-authorization'
+import { useAuthorization, BearerToken } from '@socheatsok78/axios-authorization'
 
+// Register the plugin
 useAuthorization(axios)
 
-// Set the authorization as Bearer token to request header of current `axios` instance.
-axios.setAuthorization('token', TokenType.Bearer) 
+// Create token object
+import { BearerToken } from '@socheatsok78/axios-authorization'
 
-// To unset the authorization token
-axios.unsetAuthorization() 
+const token = new BearerToken({
+    token: 'your-bearer-token'
+})
+
+// Set the Authorization token to the request header
+axios.setAuthorization(token) 
+
+// Remove the Authorization token from the request header
+axios.unsetAuthorization()
+```
+
+**Create a `Bearer` token**
+
+```js
+import { BearerToken } from '@socheatsok78/axios-authorization'
+
+// Create Bearer token object
+const token = new BearerToken({
+    token: 'your-bearer-token'
+})
+
+// Set the Authorization token to the request header
+axios.setAuthorization(token) 
+```
+**Create a `Basic` token**
+
+```js
+import { BasicToken } from '@socheatsok78/axios-authorization'
+
+// Create Basic token object
+const token = new BasicToken({
+    username: 'your-username',
+    password: 'your-secure-password'
+})
+
+// Set the Authorization token to the request header
+axios.setAuthorization(token) 
 ```
 ## License
 
