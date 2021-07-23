@@ -1,4 +1,7 @@
 import pkg from './package.json'
+import commonjs from '@rollup/plugin-commonjs';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
+
 import typescript from "rollup-plugin-typescript2";
 import json from '@rollup/plugin-json';
 import { terser } from "rollup-plugin-terser";
@@ -17,6 +20,8 @@ function config({ name, input, format, minify, ext = "js" }) {
     },
     plugins: [
       json(),
+      commonjs(),
+      nodeResolve(),
       typescript({
         clean: true,
         typescript: require("typescript"),
