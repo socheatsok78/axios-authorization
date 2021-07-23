@@ -1,6 +1,6 @@
 {
   "name": "axios-authorization",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "typings": "types/index.d.ts",
   "repository": "git@github.com:socheatsok78/axios-authorization.git",
