@@ -16,8 +16,10 @@ export default function useAuthorization(axiosInstance: AxiosInstance) {
         }
     }
 
-    if (!axiosInstance.unsetAuthorization) { }
-    axiosInstance.unsetAuthorization = function () {
-        delete this.defaults.headers.common.Authorization
+    if (!axiosInstance.unsetAuthorization) {
+        axiosInstance.unsetAuthorization = function () {
+            delete this.defaults.headers.common.Authorization
+        }
     }
+
 }
