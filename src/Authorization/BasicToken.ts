@@ -16,10 +16,7 @@ export class BasicToken {
     }
 
     toString() {
-        const payload = JSON.stringify({
-            username: this.username,
-            password: this.password
-        })
+        const payload = `${this.username}:${this.password}`
         const token = Base64.encode(payload)
         return `${TokenType.Basic} ${token}`
     }
