@@ -2,8 +2,8 @@
 
 Axios authorization plugin 🎫 
 
-[![@socheatsok78/axios-authorization](https://img.shields.io/npm/dw/@socheatsok78/axios-authorization)](https://npm.im/@socheatsok78/axios-authorization)
-[![license](https://img.shields.io/github/license/socheatsok78/axios-authorization)](LICENSE)
+[![@socheatsok78/axios-authorization][npm-badge]][npm-url]
+[![license][license-badge]](LICENSE)
 
 ## Install
 
@@ -66,3 +66,8 @@ axios.setAuthorization(token)
 ## License
 
 Licensed under the [MIT License](LICENSE).
+
+<!-- variables -->
+[npm-badge]: https://img.shields.io/npm/dw/@socheatsok78/axios-authorization
+[npm-url]: https://npm.im/@socheatsok78/axios-authorization
+[license-badge]: https://img.shields.io/github/license/socheatsok78/axios-authorization
