@@ -2,7 +2,7 @@
 
 Axios authorization plugin 🎫 
 
-[https://img.shields.io/npm/dw/@socheatsok78/axios-authorization](https://npm.im/@socheatsok78/axios-authorization)
+[![@socheatsok78/axios-authorization](https://img.shields.io/npm/dw/@socheatsok78/axios-authorization)](https://npm.im/@socheatsok78/axios-authorization)
 
 ## Install
 
