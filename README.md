@@ -1,8 +1,9 @@
-# axios-authorization
+# @socheatsok78/axios-authorization
 
 Axios authorization plugin 🎫 
 
 [![@socheatsok78/axios-authorization](https://img.shields.io/npm/dw/@socheatsok78/axios-authorization)](https://npm.im/@socheatsok78/axios-authorization)
+[![license](https://img.shields.io/github/license/socheatsok78/axios-authorization)](LICENSE)
 
 ## Install
 
