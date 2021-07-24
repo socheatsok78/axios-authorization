@@ -2,7 +2,7 @@
 
 Axios authorization plugin 🎫 
 
-[![@socheatsok78/axios-authorization][npm-badge]][npm-url]
+[![@npm][npm-badge]][npm-url]
 [![license][license-badge]](LICENSE)
 
 ## Install
