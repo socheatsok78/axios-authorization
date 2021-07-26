@@ -1,5 +1,5 @@
 import { AxiosInstance } from 'axios'
-import { AuthorizationType } from './Authorization/AuthorizationType'
+import { AuthorizationType } from './Authorization/Types/AuthorizationType'
 
 export function setAuthorization(this: AxiosInstance, token: AuthorizationType) {
     this.defaults.headers.common.Authorization = token.toString()

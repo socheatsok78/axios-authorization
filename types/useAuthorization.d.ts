@@ -1,5 +1,5 @@
 import { AxiosInstance } from 'axios';
-import { AuthorizationType } from './Authorization/AuthorizationType';
+import { AuthorizationType } from './Authorization/Types/AuthorizationType';
 export declare function setAuthorization(this: AxiosInstance, token: AuthorizationType): void;
 export declare function unsetAuthorization(this: AxiosInstance): void;
 /**
