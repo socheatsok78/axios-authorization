@@ -6,6 +6,16 @@
   "repository": "git@github.com:socheatsok78/axios-authorization.git",
   "author": "Socheat Sok <alex@socheat.net>",
   "license": "MIT",
+  "directories": {
+    "dist": "dist",
+    "src": "src",
+    "types": "types"
+  },
+  "files": [
+    "dist",
+    "types",
+    "src"
+  ],
   "scripts": {
     "clean": "rm -rf dist",
     "prebuild": "yarn clean",
