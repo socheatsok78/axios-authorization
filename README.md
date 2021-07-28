@@ -5,6 +5,15 @@ Axios authorization plugin 🎫
 [![@npm][npm-badge]][npm-url]
 [![license][license-badge]](LICENSE)
 
+## Features
+
+- [x] Add support for `BasicToken`
+- [x] Add support for `BearerToken`
+- [ ] Add support for `Oauth 1.0`
+- [ ] Add support for `Oauth 2.0`
+- [ ] Add support for `Microsoft NTLM`
+- [ ] Add support for `AWS IAM v4`
+
 ## Install
 
 ```sh
@@ -63,6 +72,7 @@ const token = new BasicToken({
 // Set the Authorization token to the request header
 axios.setAuthorization(token) 
 ```
+
 ## License
 
 Licensed under the [MIT License](LICENSE).
