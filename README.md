@@ -52,7 +52,8 @@ import { BearerToken } from '@socheatsok78/axios-authorization'
 
 // Create Bearer token object
 const token = new BearerToken({
-    token: 'your-bearer-token'
+    token: 'your-bearer-token',
+    prefix: 'Bearer' // optional
 })
 
 // Set the Authorization token to the request header
