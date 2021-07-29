@@ -1,9 +1,9 @@
-import { TokenType } from "../TokenType";
-import { BasicToken } from "./BasicToken";
-import { BearerToken } from "./BearerToken";
-import { JSONTokenFormat } from "./Types/AuthorizationType";
+import { TokenType } from "../Enums"
+import { JSONTokenFormat } from "../Types"
+import { BasicToken } from "./BasicToken"
+import { BearerToken } from "./BearerToken"
 
-const TokenTypeMapper = {
+export const TokenTypeMapper = {
     [TokenType.Basic]: BasicToken,
     [TokenType.Bearer]: BearerToken
 }
