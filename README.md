@@ -26,23 +26,19 @@ yarn add @socheatsok78/axios-authorization
 
 ```js
 import axios from 'axios'
-import { useAuthorization, BearerToken } from '@socheatsok78/axios-authorization'
+import { useAuthorization } from '@socheatsok78/axios-authorization'
 
 // Register the plugin
 useAuthorization(axios)
 
 // Create token object
-import { BearerToken } from '@socheatsok78/axios-authorization'
-
-const token = new BearerToken({
-    token: 'your-bearer-token'
-})
+const token = axios.credentials.create('Bearer', { token: 'your-bearer-token' })
 
 // Set the Authorization token to the request header
-axios.setAuthorization(token) 
+axios.credentials.store(token) 
 
 // Remove the Authorization token from the request header
-axios.unsetAuthorization()
+axios.credentials.clear()
 ```
 
 **Create a `Bearer` token**
@@ -51,13 +47,17 @@ axios.unsetAuthorization()
 import { BearerToken } from '@socheatsok78/axios-authorization'
 
 // Create Bearer token object
+const token = axios.credentials.create('Bearer', { token: 'your-bearer-token' })
+
+// or
+
 const token = new BearerToken({
     token: 'your-bearer-token',
     prefix: 'Bearer' // optional
 })
 
 // Set the Authorization token to the request header
-axios.setAuthorization(token) 
+axios.credentials.store(token) 
 ```
 **Create a `Basic` token**
 
@@ -65,13 +65,20 @@ axios.setAuthorization(token)
 import { BasicToken } from '@socheatsok78/axios-authorization'
 
 // Create Basic token object
+const token = axios.credentials.create('Basic', {
+    username: 'your-username',
+    password: 'your-secure-password'
+})
+
+// or
+
 const token = new BasicToken({
     username: 'your-username',
     password: 'your-secure-password'
 })
 
 // Set the Authorization token to the request header
-axios.setAuthorization(token) 
+axios.credentials.store(token) 
 ```
 
 ## License
