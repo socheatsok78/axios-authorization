@@ -20,8 +20,7 @@
     "clean": "rm -rf dist",
     "prebuild": "yarn clean",
     "build": "rollup -c",
-    "bump:release": "yarn version",
-    "prepublish": "yarn build"
+    "bump:release": "yarn version"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
@@ -30,7 +29,6 @@
     "@rollup/plugin-commonjs": "^19.0.1",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.2",
-    "@types/base-64": "^1.0.0",
     "axios": "^0.21.1",
     "rollup": "^2.41.0",
     "rollup-plugin-terser": "^7.0.2",
@@ -38,6 +36,7 @@
     "typescript": "^4.2.3"
   },
   "dependencies": {
+    "@types/base-64": "^1.0.0",
     "base-64": "^1.0.0"
   }
 }
