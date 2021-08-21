@@ -1,6 +1,6 @@
 {
   "name": "@socheatsok78/axios-authorization",
-  "version": "1.0.0-beta.5",
+  "version": "1.0.0-beta.6",
   "main": "dist/umd/index.js",
   "typings": "types/index.d.ts",
   "repository": "git@github.com:socheatsok78/axios-authorization.git",
@@ -31,7 +31,6 @@
     "@rollup/plugin-commonjs": "^19.0.1",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.2",
-    "@types/base-64": "^1.0.0",
     "axios": "^0.21.1",
     "rollup": "^2.41.0",
     "rollup-plugin-terser": "^7.0.2",
@@ -39,6 +38,7 @@
     "typescript": "^4.2.3"
   },
   "dependencies": {
+    "@types/base-64": "^1.0.0",
     "base-64": "^1.0.0"
   }
 }
