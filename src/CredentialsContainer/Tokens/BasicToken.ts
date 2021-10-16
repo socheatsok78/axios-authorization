@@ -1,13 +1,8 @@
 import Base64 from 'base-64'
-import { JSONTokenFormat } from './Types/AuthorizationType';
-import { TokenType } from "../TokenType";
+import { TokenType } from "../Enums";
+import { IToken, BasicTokenOptions, JSONTokenFormat } from "../Types";
 
-export type BasicTokenOptions = {
-    username: string
-    password: string
-}
-
-export class BasicToken {
+export class BasicToken implements IToken {
     private username: string;
     private password: string;
 

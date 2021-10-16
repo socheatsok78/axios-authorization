@@ -1,24 +1,15 @@
 import { AxiosInstance } from 'axios'
-import { AuthorizationType } from './Authorization/Types/AuthorizationType'
-
-export function setAuthorization(this: AxiosInstance, token: AuthorizationType) {
-    this.defaults.headers.common.Authorization = token.toString()
-}
-
-export function unsetAuthorization(this: AxiosInstance) {
-    delete this.defaults.headers.common.Authorization
-}
+import { CredentialsContainer } from './CredentialsContainer'
+import { name } from '../package.json'
 
 /**
  * useAuthorization
- * @param {AxiosInstance} axiosInstance
+ * @param {AxiosInstance} axios
  */
-export function useAuthorization(axiosInstance: AxiosInstance) {
-    if (!axiosInstance.setAuthorization) {
-        axiosInstance.setAuthorization = setAuthorization
+export function useAuthorization(axios: AxiosInstance) {
+    if (axios.credentials) {
+        throw new Error(`[${name}] Failed to install plugin.`)
     }
 
-    if (!axiosInstance.unsetAuthorization) {
-        axiosInstance.unsetAuthorization = unsetAuthorization
-    }
+    axios.credentials = new CredentialsContainer(axios)
 }

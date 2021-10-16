@@ -1,12 +1,7 @@
-import { JSONTokenFormat } from "./Types/AuthorizationType";
-import { TokenType } from "../TokenType";
+import { TokenType } from "../Enums";
+import { IToken, BearerTokenOptions, JSONTokenFormat } from "../Types";
 
-export type BearerTokenOptions = {
-    token: string,
-    prefix?: string
-}
-
-export class BearerToken {
+export class BearerToken implements IToken {
     private token: string;
     private prefix: string = TokenType.Bearer;
 

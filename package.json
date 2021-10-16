@@ -17,10 +17,12 @@
     "src"
   ],
   "scripts": {
-    "clean": "rm -rf dist",
+    "clean": "rm -rf dist types/src",
     "prebuild": "yarn clean",
     "build": "rollup -c",
-    "bump:release": "yarn version"
+    "postbuild": "cp -R dist/umd/src types",
+    "bump:release": "yarn version",
+    "prepublish": "yarn build"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
