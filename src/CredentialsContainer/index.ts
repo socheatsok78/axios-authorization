@@ -6,11 +6,13 @@ import { AuthorizationCreationType, AuthorizationTypeMap, IToken } from "./Types
 
 export class CredentialsContainer {
     private context: AxiosInstance
-    private httpHeaders: Pick<AxiosRequestConfig, 'headers'> | any
 
     constructor(axios: AxiosInstance) {
         this.context = axios
-        this.httpHeaders = this.context.defaults.headers
+    }
+
+    private get httpHeaders(): Pick<AxiosRequestConfig, 'headers'> | any {
+        return this.context.defaults.headers
     }
 
     public create<T extends AuthorizationCreationType>(type: T, data: AuthorizationTypeMap[T]) {
