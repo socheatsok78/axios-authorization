@@ -1,8 +1,8 @@
-import { AxiosInstance, AxiosRequestConfig } from "axios";
+import type { AxiosInstance, AxiosRequestConfig } from "axios";
+import type { AuthorizationCreationType, AuthorizationTypeMap, IToken } from "./Types";
 import { BasicToken } from "./Tokens/BasicToken";
 import { BearerToken } from "./Tokens/BearerToken";
 import { Token } from "./Tokens/Token";
-import { AuthorizationCreationType, AuthorizationTypeMap, IToken } from "./Types";
 
 export class CredentialsContainer {
     private context: AxiosInstance

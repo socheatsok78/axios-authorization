@@ -1,4 +1,4 @@
-import { AxiosInstance } from 'axios'
+import type { AxiosInstance } from 'axios'
 import { CredentialsContainer } from './CredentialsContainer'
 import { name } from '../package.json'
 
