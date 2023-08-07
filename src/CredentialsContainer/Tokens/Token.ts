@@ -10,7 +10,7 @@ export const TokenTypeMapper = {
 
 export class Token {
     public static fromJSON(json: string) {
-        const meta: JSONTokenFormat<any> = JSON.parse(json)
+        const meta = JSON.parse(json) as JSONTokenFormat<any>
 
         if (!(meta.type in TokenTypeMapper)) {
             throw new Error(`[Token] Invalid token type: ${meta.type}.`)
