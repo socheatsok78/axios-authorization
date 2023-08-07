@@ -11,7 +11,7 @@ export declare type AuthorizationTypeMap = {
     Basic: BasicTokenOptions;
     Bearer: BearerTokenOptions;
 };
-export declare type JSONTokenFormat<T> = {
+export declare type JSONTokenFormat<T = any> = {
     type: string;
     data: T;
 };
