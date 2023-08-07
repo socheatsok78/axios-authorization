@@ -22,7 +22,7 @@
     "build": "rollup -c",
     "postbuild": "cp -R dist/umd/src types",
     "bump:release": "yarn version",
-    "prepublish": "yarn build"
+    "prepare": "yarn build"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
