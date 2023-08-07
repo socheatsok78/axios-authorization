@@ -1,4 +1,4 @@
-import { IToken, BearerTokenOptions, JSONTokenFormat } from "../Types";
+import type { IToken, BearerTokenOptions, JSONTokenFormat } from "../Types";
 export declare class BearerToken implements IToken {
     private token;
     private prefix;

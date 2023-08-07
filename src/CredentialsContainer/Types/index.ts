@@ -15,7 +15,7 @@ export type AuthorizationTypeMap = {
   Bearer: BearerTokenOptions
 }
 
-export type JSONTokenFormat<T> = {
+export type JSONTokenFormat<T = any> = {
     type: string,
     data: T
 }

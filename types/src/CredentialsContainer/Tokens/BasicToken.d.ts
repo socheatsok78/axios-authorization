@@ -1,4 +1,4 @@
-import { IToken, BasicTokenOptions, JSONTokenFormat } from "../Types";
+import type { IToken, BasicTokenOptions, JSONTokenFormat } from "../Types";
 export declare class BasicToken implements IToken {
     private username;
     private password;
