@@ -1,6 +1,6 @@
 import Base64 from 'base-64'
 import { TokenType } from "../Enums";
-import { IToken, BasicTokenOptions, JSONTokenFormat } from "../Types";
+import type { IToken, BasicTokenOptions, JSONTokenFormat } from "../Types";
 
 export class BasicToken implements IToken {
     private username: string;

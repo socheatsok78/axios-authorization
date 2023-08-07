@@ -1,7 +1,7 @@
-import { AxiosInstance } from "axios";
+import type { AxiosInstance } from "axios";
+import type { AuthorizationCreationType, AuthorizationTypeMap, IToken } from "./Types";
 import { BasicToken } from "./Tokens/BasicToken";
 import { BearerToken } from "./Tokens/BearerToken";
-import { AuthorizationCreationType, AuthorizationTypeMap, IToken } from "./Types";
 export declare class CredentialsContainer {
     private context;
     constructor(axios: AxiosInstance);

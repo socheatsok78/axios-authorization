@@ -1,5 +1,5 @@
 import { TokenType } from "../Enums";
-import { IToken, BearerTokenOptions, JSONTokenFormat } from "../Types";
+import type { IToken, BearerTokenOptions, JSONTokenFormat } from "../Types";
 
 export class BearerToken implements IToken {
     private token: string;

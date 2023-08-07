@@ -1,5 +1,5 @@
+import type { JSONTokenFormat } from "../Types"
 import { TokenType } from "../Enums"
-import { JSONTokenFormat } from "../Types"
 import { BasicToken } from "./BasicToken"
 import { BearerToken } from "./BearerToken"
 
